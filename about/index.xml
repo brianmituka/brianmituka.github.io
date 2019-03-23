@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello on The Diary of a dreamer</title>
-    <link>https://brianmituka.com/about/</link>
+    <link>https://brianmituka.github.io/about/</link>
     <description>Recent content in Hello on The Diary of a dreamer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2019</copyright>
     <lastBuildDate>Wed, 20 Mar 2019 13:55:11 +0300</lastBuildDate>
     
-	<atom:link href="https://brianmituka.com/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://brianmituka.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
