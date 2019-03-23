@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The Diary of a dreamer</title>
+    <link>https://brianmituka.com/posts/</link>
+    <description>Recent content in Posts on The Diary of a dreamer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Sat, 23 Mar 2019 17:13:06 +0300</lastBuildDate>
+    
+	<atom:link href="https://brianmituka.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Groovy</title>
+      <link>https://brianmituka.com/posts/introduction-to-groovy/</link>
+      <pubDate>Sat, 23 Mar 2019 17:13:06 +0300</pubDate>
+      
+      <guid>https://brianmituka.com/posts/introduction-to-groovy/</guid>
+      <description>Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static. types are inferred based on the variable values type
+Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static. types are inferred based on the variable values type
+Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static.</description>
+    </item>
+    
+  </channel>
+</rss>

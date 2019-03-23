@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Diary of a dreamer</title>
+    <link>https://brianmituka.com/</link>
+    <description>Recent content on The Diary of a dreamer</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact>briannitletone@protonmail.com</contact>
+    <copyright>&copy; <a href:"https://github.com/brianmituka">Brianmituka</a> 2019</copyright>
+    
+        <atom:link href="https://brianmituka.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Groovy</title>
+      <link>https://brianmituka.com/posts/introduction-to-groovy/</link>
+      <pubDate>Sat, 23 Mar 2019 17:13:06 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.com/posts/introduction-to-groovy/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
+Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
+
+&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
+Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
+
+&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
+Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://brianmituka.com/post/</link>
+      <pubDate>Wed, 20 Mar 2019 13:55:11 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.com/post/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;# I am not brian nitletone this is my blog. You can also call me mots&lt;/p&gt;
+</content>
+      
+    </item>
+    
+  </channel>
+</rss>
