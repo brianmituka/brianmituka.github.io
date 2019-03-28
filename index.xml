@@ -13,6 +13,20 @@
     
     
     <item>
+      <title>Resetting Mysql Root Password</title>
+      <link>https://brianmituka.com/posts/resetting-mysql-root-password/</link>
+      <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.com/posts/resetting-mysql-root-password/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;This will be a quick guide on how to reset your mysql root password.&lt;br /&gt;
+Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send  SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
       <title>Introduction to Groovy</title>
       <link>https://brianmituka.com/posts/introduction-to-groovy/</link>
       <pubDate>Sat, 23 Mar 2019 17:13:06 +0300</pubDate>
