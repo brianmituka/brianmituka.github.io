@@ -21,27 +21,8 @@
       <description></description>
       
       <content>&lt;p&gt;This will be a quick guide on how to reset your mysql root password.&lt;br /&gt;
-Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send  SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.&lt;/p&gt;
-</content>
-      
-    </item>
-    
-    <item>
-      <title>Introduction to Groovy</title>
-      <link>https://brianmituka.com/posts/introduction-to-groovy/</link>
-      <pubDate>Sat, 23 Mar 2019 17:13:06 +0300</pubDate>
-      <author>brian mituka</author>
-      <guid>https://brianmituka.com/posts/introduction-to-groovy/</guid>
-      <description></description>
-      
-      <content>&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
-Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
-
-&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
-Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
-
-&lt;p&gt;Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate
-Groovy is optionally static. types are inferred based on the variable values type&lt;/p&gt;
+Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send  SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.&lt;br /&gt;
+The problem&lt;/p&gt;
 </content>
       
     </item>

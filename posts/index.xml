@@ -19,18 +19,8 @@
       
       <guid>https://brianmituka.com/posts/resetting-mysql-root-password/</guid>
       <description>This will be a quick guide on how to reset your mysql root password.
-Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Groovy</title>
-      <link>https://brianmituka.com/posts/introduction-to-groovy/</link>
-      <pubDate>Sat, 23 Mar 2019 17:13:06 +0300</pubDate>
-      
-      <guid>https://brianmituka.com/posts/introduction-to-groovy/</guid>
-      <description>Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static. types are inferred based on the variable values type
-Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static. types are inferred based on the variable values type
-Groovy is a dynamic loosely typed language for the JVM. Basically, groovy is Java without the boilerplate Groovy is optionally static.</description>
+Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.
+The problem</description>
     </item>
     
   </channel>
