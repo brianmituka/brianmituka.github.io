@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Diary of a dreamer</title>
+    <title>ChimieMots</title>
     <link>https://brianmituka.com/</link>
-    <description>Recent content on The Diary of a dreamer</description>
+    <description>Recent content on ChimieMots</description>
     <generator>Hugo - gohugo.io</generator>
     <language>en</language>
     <contact>briannitletone@protonmail.com</contact>
@@ -13,16 +13,61 @@
     
     
     <item>
-      <title>Resetting Mysql Root Password</title>
+      <title>Resetting Mysql 5.7 Root Password</title>
       <link>https://brianmituka.com/posts/resetting-mysql-root-password/</link>
       <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>
       <author>brian mituka</author>
       <guid>https://brianmituka.com/posts/resetting-mysql-root-password/</guid>
       <description></description>
       
-      <content>&lt;p&gt;This will be a quick guide on how to reset your mysql root password.&lt;br /&gt;
+      <content>
+
+&lt;p&gt;This will be a quick guide on how to reset your mysql root password.&lt;br /&gt;
 Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send  SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.&lt;br /&gt;
-The problem&lt;/p&gt;
+The problem was that I could not log into the database since nobody could remember the password as it was no longer being used.&lt;br /&gt;
+These are the steps I used to reset the password.&lt;/p&gt;
+
+&lt;h4 id=&#34;stop-the-the-mysql-server&#34;&gt;Stop the the mysql server&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;#Linux
+
+service mysql stop  or
+/etc/init.d/mysqld stop or
+service mysqld stop
+
+#MacOs
+
+brew services stop mysql@5.7 or
+/usr/local/opt/mysql@5.7/bin/mysql.server stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;start-mysql-with-skip-grant-tables-to-skip-password-step&#34;&gt;Start mysql with &amp;ndash;skip-grant tables to skip password step&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mysqld_safe --skip-grant-tables &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;login-with-root-user-and-change-password&#34;&gt;Login with root user and change password&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mysql -u root
+use mysql;
+update user set password=PASSWORD(&#39;NEW-PASSWORD&#39;) where User=&#39;root&#39;;
+flush privileges;
+exit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;restart-mysql-and-log-in-with-your-new-password&#34;&gt;Restart mysql and log in with your new password&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;#Linux
+
+service mysql restart or
+/etc/init.d/mysqld restart or
+service mysqld restart
+
+#MacOs
+
+brew services restart mysql@5.7 or
+/usr/local/opt/mysql@5.7/bin/mysql.server restart
+&lt;/code&gt;&lt;/pre&gt;
 </content>
       
     </item>

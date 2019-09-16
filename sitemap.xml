@@ -13,6 +13,12 @@
   </url>
   
   <url>
+    <loc>https://brianmituka.com/</loc>
+    <lastmod>2019-03-28T10:08:39+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://brianmituka.com/posts/</loc>
     <lastmod>2019-03-28T10:08:39+03:00</lastmod>
     <priority>0</priority>
@@ -20,12 +26,6 @@
   
   <url>
     <loc>https://brianmituka.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brianmituka.com/</loc>
-    <lastmod>2019-03-28T10:08:39+03:00</lastmod>
     <priority>0</priority>
   </url>
   

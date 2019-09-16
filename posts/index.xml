@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The Diary of a dreamer</title>
+    <title>Posts on ChimieMots</title>
     <link>https://brianmituka.com/posts/</link>
-    <description>Recent content in Posts on The Diary of a dreamer</description>
+    <description>Recent content in Posts on ChimieMots</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2019</copyright>
@@ -13,14 +13,14 @@
     
     
     <item>
-      <title>Resetting Mysql Root Password</title>
+      <title>Resetting Mysql 5.7 Root Password</title>
       <link>https://brianmituka.com/posts/resetting-mysql-root-password/</link>
       <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>
       
       <guid>https://brianmituka.com/posts/resetting-mysql-root-password/</guid>
       <description>This will be a quick guide on how to reset your mysql root password.
 Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.
-The problem</description>
+The problem was that I could not log into the database since nobody could remember the password as it was no longer being used.</description>
     </item>
     
   </channel>

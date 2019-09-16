@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Resetting Mysql Root Password | The Diary of a dreamer</title>
+<title>Resetting Mysql 5.7 Root Password | ChimieMots</title>
 
 
 
-<link href="https://brianmituka.com/index.xml" rel="alternate" type="application/rss+xml" title="The Diary of a dreamer" />
+<link href="https://brianmituka.com/index.xml" rel="alternate" type="application/rss+xml" title="ChimieMots" />
 
 <link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://brianmituka.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,7 +24,7 @@
     <nav class="nav">
       <div class="nav-left">
         <a class="nav-item" href="https://brianmituka.com">
-          <h1 class="title is-4">The Diary of a dreamer</h1>
+          <h1 class="title is-4">ChimieMots</h1>
         </a>
       </div>
       <div class="nav-right">
@@ -74,12 +74,57 @@
       
     </div>
     <h2 class="subtitle is-6">March 28, 2019</h2>
-    <h1 class="title">Resetting Mysql Root Password</h1>
+    <h1 class="title">Resetting Mysql 5.7 Root Password</h1>
     
     <div class="content">
-      <p>This will be a quick guide on how to reset your mysql root password.<br />
+      
+
+<p>This will be a quick guide on how to reset your mysql root password.<br />
 Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send  SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.<br />
-The problem</p>
+The problem was that I could not log into the database since nobody could remember the password as it was no longer being used.<br />
+These are the steps I used to reset the password.</p>
+
+<h4 id="stop-the-the-mysql-server">Stop the the mysql server</h4>
+
+<pre><code class="language-shell">#Linux
+
+service mysql stop  or
+/etc/init.d/mysqld stop or
+service mysqld stop
+
+#MacOs
+
+brew services stop mysql@5.7 or
+/usr/local/opt/mysql@5.7/bin/mysql.server stop
+</code></pre>
+
+<h4 id="start-mysql-with-skip-grant-tables-to-skip-password-step">Start mysql with &ndash;skip-grant tables to skip password step</h4>
+
+<pre><code class="language-shell">mysqld_safe --skip-grant-tables &gt; /dev/null 2&gt;&amp;1 &amp;
+</code></pre>
+
+<h4 id="login-with-root-user-and-change-password">Login with root user and change password</h4>
+
+<pre><code class="language-shell">mysql -u root
+use mysql;
+update user set password=PASSWORD('NEW-PASSWORD') where User='root';
+flush privileges;
+exit
+</code></pre>
+
+<h4 id="restart-mysql-and-log-in-with-your-new-password">Restart mysql and log in with your new password</h4>
+
+<pre><code>#Linux
+
+service mysql restart or
+/etc/init.d/mysqld restart or
+service mysqld restart
+
+#MacOs
+
+brew services restart mysql@5.7 or
+/usr/local/opt/mysql@5.7/bin/mysql.server restart
+</code></pre>
 
       
       <div class="related">
@@ -87,6 +132,26 @@ The problem</p>
       
     </div>
     
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+  
+    <script type="text/javascript">
+      var disqus_shortname = 'brianmituka';
+      function disqus() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+  
+      disqus();
+  
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </section>
 
