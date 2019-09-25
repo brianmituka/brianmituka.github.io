@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ChimieMots</title>
-    <link>https://brianmituka.com/</link>
+    <link>https://brianmituka.github.io/</link>
     <description>Recent content on ChimieMots</description>
     <generator>Hugo - gohugo.io</generator>
     <language>en</language>
     <contact>briannitletone@protonmail.com</contact>
     <copyright>&copy; <a href:"https://github.com/brianmituka">Brianmituka</a> 2019</copyright>
     
-        <atom:link href="https://brianmituka.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://brianmituka.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using du to find the sizes of directories and files</title>
-      <link>https://brianmituka.com/posts/bash/</link>
+      <link>https://brianmituka.github.io/posts/bash/</link>
       <pubDate>Mon, 23 Sep 2019 23:28:15 +0300</pubDate>
       <author>brian mituka</author>
-      <guid>https://brianmituka.com/posts/bash/</guid>
+      <guid>https://brianmituka.github.io/posts/bash/</guid>
       <description></description>
       
       <content>
@@ -71,10 +71,10 @@ You can use &lt;code&gt;du&lt;/code&gt; to find out how big files are especially
     
     <item>
       <title>What is devops?</title>
-      <link>https://brianmituka.com/posts/devops/</link>
+      <link>https://brianmituka.github.io/posts/devops/</link>
       <pubDate>Mon, 23 Sep 2019 10:19:03 +0300</pubDate>
       <author>brian mituka</author>
-      <guid>https://brianmituka.com/posts/devops/</guid>
+      <guid>https://brianmituka.github.io/posts/devops/</guid>
       <description></description>
       
       <content>
@@ -241,10 +241,10 @@ This was initially a presentation I did during team calls we have at FrontlineSM
     
     <item>
       <title>Resetting Mysql 5.7 Root Password</title>
-      <link>https://brianmituka.com/posts/resetting-mysql-root-password/</link>
+      <link>https://brianmituka.github.io/posts/resetting-mysql-root-password/</link>
       <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>
       <author>brian mituka</author>
-      <guid>https://brianmituka.com/posts/resetting-mysql-root-password/</guid>
+      <guid>https://brianmituka.github.io/posts/resetting-mysql-root-password/</guid>
       <description></description>
       
       <content>

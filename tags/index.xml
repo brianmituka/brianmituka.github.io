@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ChimieMots</title>
-    <link>https://brianmituka.com/tags/</link>
+    <link>https://brianmituka.github.io/tags/</link>
     <description>Recent content in Tags on ChimieMots</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2019</copyright>
     
-	<atom:link href="https://brianmituka.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://brianmituka.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

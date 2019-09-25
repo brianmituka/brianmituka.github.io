@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://brianmituka.com/sitemap.xml
+Sitemap: https://brianmituka.github.io/sitemap.xml
