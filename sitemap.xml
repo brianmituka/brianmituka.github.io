@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://brianmituka.com/posts/bash/</loc>
+    <lastmod>2019-09-23T23:28:15+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://brianmituka.com/posts/devops/</loc>
+    <lastmod>2019-09-23T10:19:03+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://brianmituka.com/posts/resetting-mysql-root-password/</loc>
     <lastmod>2019-03-28T10:08:39+03:00</lastmod>
   </url>
@@ -14,13 +24,13 @@
   
   <url>
     <loc>https://brianmituka.com/</loc>
-    <lastmod>2019-03-28T10:08:39+03:00</lastmod>
+    <lastmod>2019-09-23T23:28:15+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://brianmituka.com/posts/</loc>
-    <lastmod>2019-03-28T10:08:39+03:00</lastmod>
+    <lastmod>2019-09-23T23:28:15+03:00</lastmod>
     <priority>0</priority>
   </url>
   

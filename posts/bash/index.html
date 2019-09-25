@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.54.0" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>The Diary of a Dreamer</title>
+<title>Using du to find the sizes of directories and files | ChimieMots</title>
 
 
 
@@ -71,73 +70,73 @@
 </section>
 <section class="section">
   <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+    </div>
+    <h2 class="subtitle is-6">September 23, 2019</h2>
+    <h1 class="title">Using du to find the sizes of directories and files</h1>
     
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-      </div>
-      <h2 class="subtitle is-6">September 23, 2019</h2>
-      <h1 class="title"><a href="https://brianmituka.com/posts/bash/">Using du to find the sizes of directories and files</a></h1>
-      <div class="content">
-         # du - stands for disk usage man du #exclude a particular file type with --exclude --exclude='*.fileext' #to show everything including files add -a du directory/ #formatted output of subdirectory sizes du -h directory/ #show the subdirectory sizes in kbs du -k directory/ #show the subdirectory sizes in mbs du -m directory/ #show all subdirectories + files sizes du -ha directory/ #get the total size of the directory du -ch directory/ | grep total  Getting the sub-directories disk size from smallest to largest du -h --max-depth=1 | sort -hr  
-        
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-      </div>
-      <h2 class="subtitle is-6">September 23, 2019</h2>
-      <h1 class="title"><a href="https://brianmituka.com/posts/devops/">What is devops?</a></h1>
-      <div class="content">
-        Introduction Some might define it as a software development method, while others might think that it is a set of tools and technologies such as configuration management and continuous delivery(me).
-Devops is a professional and cultural movement that stresses the iterative efforts to break down information silos, monitor relationships and repair when misunderstandings arise between teams in an organization. This enables an organization to deliver services faster, evolve and improve products at a faster pace than organizations using traditional software development and infrastructure management processes.
-        
-        <a class="button is-link" href="https://brianmituka.com/posts/devops/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-      </div>
-      <h2 class="subtitle is-6">March 28, 2019</h2>
-      <h1 class="title"><a href="https://brianmituka.com/posts/resetting-mysql-root-password/">Resetting Mysql 5.7 Root Password</a></h1>
-      <div class="content">
-        This will be a quick guide on how to reset your mysql root password.
-Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.
-The problem was that I could not log into the database since nobody could remember the password as it was no longer being used.
-        
-        <a class="button is-link" href="https://brianmituka.com/posts/resetting-mysql-root-password/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
+    <div class="content">
+      
+
+<pre><code class="language-bash"># du - stands for disk usage
+man du
+#exclude a particular file type with --exclude
+--exclude='*.fileext' 
+#to show everything including files add -a
+du directory/
+
+#formatted output of subdirectory sizes
+du -h directory/
+
+#show the subdirectory sizes in kbs
+du -k directory/
+
+#show the subdirectory sizes in mbs
+du -m directory/
+
+#show all subdirectories + files sizes
+du -ha directory/
+
+#get the total size of the directory
+du -ch directory/ | grep total
+
+</code></pre>
+
+<h2 id="getting-the-sub-directories-disk-size-from-smallest-to-largest">Getting the sub-directories disk size from smallest to largest</h2>
+
+<pre><code class="language-bash">du -h --max-depth=1 | sort -hr
+</code></pre>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
     
   </div>
 </section>
+
 <section class="section">
   <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-        </div>
-      </div>
-    </nav>
+    <aside><div id="disqus_thread"></div></aside>
+  
+    <script type="text/javascript">
+      var disqus_shortname = 'brianmituka';
+      function disqus() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+  
+      disqus();
+  
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container has-text-centered">

@@ -13,6 +13,218 @@
     
     
     <item>
+      <title>Using du to find the sizes of directories and files</title>
+      <link>https://brianmituka.com/posts/bash/</link>
+      <pubDate>Mon, 23 Sep 2019 23:28:15 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.com/posts/bash/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# du - stands for disk usage
+man du
+#exclude a particular file type with --exclude
+--exclude=&#39;*.fileext&#39; 
+#to show everything including files add -a
+du directory/
+
+#formatted output of subdirectory sizes
+du -h directory/
+
+#show the subdirectory sizes in kbs
+du -k directory/
+
+#show the subdirectory sizes in mbs
+du -m directory/
+
+#show all subdirectories + files sizes
+du -ha directory/
+
+#get the total size of the directory
+du -ch directory/ | grep total
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;getting-the-sub-directories-disk-size-from-smallest-to-largest&#34;&gt;Getting the sub-directories disk size from smallest to largest&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;du -h --max-depth=1 | sort -hr
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>What is devops?</title>
+      <link>https://brianmituka.com/posts/devops/</link>
+      <pubDate>Mon, 23 Sep 2019 10:19:03 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.com/posts/devops/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Some might define it as a software development method, while others might think that it is a set of tools and technologies such as configuration management and continuous delivery(me).&lt;/p&gt;
+
+&lt;p&gt;Devops is a professional and cultural movement that stresses the iterative efforts to break down information silos, monitor relationships and repair when misunderstandings arise between teams in an organization. This enables an organization to deliver services faster, evolve and improve products at a faster pace than organizations using traditional software development and infrastructure management processes. It also enables organizations to compete more effectively in the market.&lt;/p&gt;
+
+&lt;p&gt;Devops is an acronym for developers and operations. I won&amp;rsquo;t get into detail about how it came about.
+This was initially a presentation I did during team calls we have at FrontlineSMS and just decided to convert it into a blog post. &lt;em&gt;I am no expert&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;misconceptions-about-devops&#34;&gt;misconceptions about devops&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Devops only involves developers and system administrators&lt;/strong&gt; - the name might inidicate that it involves only developers and operations. In real sense, the concepts and ideas of devops can and should be expanded to include others as necessary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is a team&lt;/strong&gt; - creating a team called devops, or renaming an existing team to devops as a way to check off an item on a checklist, is neither necessary nor sufficient for creating a devops culture.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is a job title&lt;/strong&gt; - The job title has been described in various ways, including a system administrator who also knows how to write code, a developer who knows the basics of system administration, or some mythical 10X engineer (said to be ten times as pro‐ ductive as other engineers, though this is difficult to measure and often used figuratively) who can be a full-time system administrator and full-time developer for only the cost of one salary without any loss in the quality of their work. In addition to being totally unrealistic, the concept of a devops engineer doesn’t scale well.
+
+&lt;ul&gt;
+&lt;li&gt;Devops is at its core a cultural and professional movement, and its ideas and principles need to be used by everyone in order to be effective.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is only relevant to web startups.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is about tools&lt;/strong&gt; - While tools are valuable, devops does not mandate or require any particular tools. The tools make it possible to achieve devops
+
+&lt;ul&gt;
+&lt;li&gt;Devops, being a cultural movement, is technology-agnostic.&lt;/li&gt;
+&lt;li&gt;Devops doesn&amp;rsquo;t require a particular set of tools. ANd should be able to be applied in any stack.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You need a devops certification&lt;/strong&gt; - Devops is a cultural movement - how do you certify culture? There is no 60 minute exam that can certify how effectively you communicate with other people, how well teams in your company work together, how your organization learns, or anything else like that.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops means doing all the work with half the people.&lt;/strong&gt; - There are some people under the impression that devops is a way to get both a software developer and a system administrator in one person - and with one person’s salary. Not only is this perception incorrect, it is often harmful.
+
+&lt;ul&gt;
+&lt;li&gt;Devops doesn’t save money by cutting the number of engineers your company needs in half. Rather, it allows organizations to increase the quality and efficiency of their work, reducing the number and duration of outages, shortening development times, and improving both individual and team effectiveness.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It will take X weeks/months to implement devops.&lt;/strong&gt; - this assumes that devops is a fixed or easily definable or measurable state, and once that state is reached then the work is done. In reality, devops is an ongoing state - it is the journey, not the destination. Some parts of it will have a fixed end point - such as setting up a configuration management system and making sure that all the company’s servers are being managed by it - but the ongoing maintenance and development of configura‐ tion management will continue. Because so much of devops is cultural, it is harder to predict how long some of those changes will take - how long will it take people to break old siloed habits and replace them with new collaborative ones?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is about automation&lt;/strong&gt; - When it comes to devops most people focus on things like configuration management and continuous integration. Some people see devops as just a way to automate traditional system developers out of their jobs.
+
+&lt;ul&gt;
+&lt;li&gt;Devops is a movement that wants to improve how people work together. If there are repetitive tasks that could be automated to free up a human from having to do them, that automation helps that person work more efficiently.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devops is a fad&lt;/strong&gt; - Because devops is not a particular technology, tool, or methodology, it is unlikely to become obsoleted or replaced. Ultimately, time will tell if devops fades into obscurity a footnote in the historical recounting of workplace organization. A movement about improving organizational effectiveness as well as individual employee happiness seems very unlikely to be merely a passing trend.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;factors-contributing-to-widesacale-adoption-of-devops&#34;&gt;Factors contributing to widesacale adoption of Devops&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data explosion.&lt;/li&gt;
+&lt;li&gt;Cloud computing.&lt;/li&gt;
+&lt;li&gt;Big Data.&lt;/li&gt;
+&lt;li&gt;Data Science and Machine learning.&lt;/li&gt;
+&lt;li&gt;Computer Hardware advancements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;benefits-of-devops&#34;&gt;Benefits of devops&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Improved development speeds: Organization spend more time building features that their customers care about delivery is timely.&lt;/li&gt;
+&lt;li&gt;Devops can be implemented as a stand-alone process or it can be incorporated with other processes.&lt;/li&gt;
+&lt;li&gt;Improves the reliability of a platform through continuous integrations, automated tests, monitoring and logging.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s consistency with updates/ the infrastructure is more stable.Automation and consistency help you manage complex or changing systems efficiently and with reduced risk&lt;/li&gt;
+&lt;li&gt;Improved collaboration and communication between the Developer and operations teams since devops emphasizes on values such as ownership and accountability. Teams operate closely and share many responsibilities, and combine their workflows. this reduces efficiency and saves time. i.e reduced handover periods between developers and operations, writing code that takes into account the environment in which it is run.&lt;/li&gt;
+&lt;li&gt;Devops makes it easy to scale your platform to handle business requirements. since the infrastructure is managed as code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;how-to-adopt-devops&#34;&gt;How to adopt devops&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removing barriers between development and operations. but this can be expanded to include other teams as required&lt;/li&gt;
+&lt;li&gt;Increasing inter-team collaborations&lt;/li&gt;
+&lt;li&gt;Building effective communication between teams leading to increased efficiencies&lt;/li&gt;
+&lt;li&gt;Teams should take full ownership of services,&lt;/li&gt;
+&lt;li&gt;Teams need to take full ownership for the services, often beyond where their stated roles or titles have traditionally been.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;devops-best-practices&#34;&gt;Devops best practices&lt;/h4&gt;
+
+&lt;p&gt;There are a few key practices that help organizations innovate faster through automating and streamlining the software development and infrastructure management processes. Most of these practices are accomplished with proper tooling.&lt;/p&gt;
+
+&lt;p&gt;The adoption of DevOps best practices will help to align people and progress towards organizational goals. DevOps offers multiple process frameworks at every stage of software development. Full-scale implementation of DevOps in an organization requires a cultural shift integrating departments, people, and the process of software life cycles&lt;/p&gt;
+
+&lt;p&gt;Here are some of the practices.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Source code Management&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A source code management system enables multiple developers to develop code concurrently across multiple development centers spread across diverse geographies. some benefits include:&lt;/li&gt;
+&lt;li&gt;Developers merge their code changes to the main or sub branch which can be tracked, audited, enquired for bug fixes, and rolled back if needed.&lt;/li&gt;
+&lt;li&gt;Improved coordination of services btwn members of a software development team&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a single source of truth for any version of the app&lt;/li&gt;
+&lt;li&gt;Allows review of changes before implementing.&lt;/li&gt;
+&lt;li&gt;Track co-authoring, collaboration and individual contribution.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Continuous integration&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Continuous integration is a software development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run. The key goals of continuous integration are to find and address bugs quicker, improve software quality, and reduce the time it takes to validate and release new software updates.&lt;/li&gt;
+&lt;li&gt;Benefits include:&lt;/li&gt;
+&lt;li&gt;Availability of latest code as we commit early and often&lt;/li&gt;
+&lt;li&gt;Faster build cycles as build issues are exposed early.&lt;/li&gt;
+&lt;li&gt;Transparency in the build process means better ownership and lesser defects.&lt;/li&gt;
+&lt;li&gt;Automating the deployment process leads to a quick turnaround.&lt;/li&gt;
+&lt;li&gt;Tools: Jenkins, TeamCity, Travis, GitLab CI, CircleCI, Codeship, Bamboo, Chef, Buddy, BitBucket&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Continuous delivery&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Continuous delivery is a software development practice where code changes are automatically built, tested, and prepared for a release to production.&lt;/li&gt;
+&lt;li&gt;It is the next step of continuous integration. It expands upon continuous integration by deploying all code changes to a testing environment and/or a production environment after the build stage.&lt;/li&gt;
+&lt;li&gt;When continuous delivery is implemented properly, developers will always have a deployment-ready build artifact that has passed through a standardized test process.&lt;/li&gt;
+&lt;li&gt;Benefits:&lt;/li&gt;
+&lt;li&gt;Developed code is continuously delivered.&lt;/li&gt;
+&lt;li&gt;Code is constantly and regularly reviewed&lt;/li&gt;
+&lt;li&gt;High quality software is deployed rapidly, reliably and repeatedly.&lt;/li&gt;
+&lt;li&gt;Maximum automation and minimum manual overhead&lt;/li&gt;
+&lt;li&gt;Frequent product releases deliver software as fas as possible.&lt;/li&gt;
+&lt;li&gt;Most current version of the product is ready in shippable format.&lt;/li&gt;
+&lt;li&gt;Effective collaboration between dev, qa and ops teams leads to higher output and satisfied customers.&lt;/li&gt;
+&lt;li&gt;Consolidated access to all tools, process and resource data leads to quicker troubleshooting and time to market.&lt;/li&gt;
+&lt;li&gt;Tools: Jenkins, TeamCity, Travis, GitLab CI, CircleCI, Codeship, Bamboo, Chef, Buddy, BitBucket&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure as code&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Infrastructure as code is a practice in which infrastructure is provisioned and managed using code and software development techniques, such as version control and continuous integration, typically as configuration definitin files, such as shell scripts, Ansible playbooks, chef recipes or puppet manifests.&lt;/li&gt;
+&lt;li&gt;The cloud’s API-driven model enables developers and system administrators to interact with infrastructure programmatically, and at scale, instead of needing to manually set up and configure resources. Benefits:&lt;/li&gt;
+&lt;li&gt;Because they are defined by code, infrastructure and servers can easily be replicated and modified/updated.&lt;/li&gt;
+&lt;li&gt;The version of all the code changes is less error prone and has reproducible results.&lt;/li&gt;
+&lt;li&gt;System availability is high, with less downtime&lt;/li&gt;
+&lt;li&gt;Multiple servers can be updated simultaneously&lt;/li&gt;
+&lt;li&gt;Smaller regular changes are easy to manage.&lt;/li&gt;
+&lt;li&gt;Tools:: Ansible tower, AWS cloudformation, Chef, puppet, Ansible, Terrafom, SaltStack.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring and logging&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Organizations monitor metrics and logs to see how application and infrastructure performance impacts the experience of their product’s end user.&lt;/li&gt;
+&lt;li&gt;Benefits:&lt;/li&gt;
+&lt;li&gt;Monitoring sheds insights into the root causes of problems or unexpected changes.&lt;/li&gt;
+&lt;li&gt;Capturing, categorizing, and then analyzing data and logs generated by applications and infrastructure,  helps organizations understand how changes or updates impact users.&lt;/li&gt;
+&lt;li&gt;Creating alerts or performing real-time analysis of this data also helps organizations more proactively monitor their services.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Communication and Collaboration&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Increased communication and collaboration in an organization is one of the key cultural aspects of DevOps.&lt;/li&gt;
+&lt;li&gt;The use of DevOps tooling and automation of the software delivery process establishes collaboration by physically bringing together the workflows and responsibilities of development and operations.&lt;/li&gt;
+&lt;li&gt;teams set strong cultural norms around information sharing and facilitating communication through the use of chat applications, issue or project tracking systems, and wikis. This helps speed up communication across developers, operations, and even other teams like marketing or sales, allowing all parts of the organization to align more closely on goals and projects.&lt;/li&gt;
+&lt;li&gt;Source:: &lt;a href=&#34;https://aws.amazon.com/devops/what-is-devops/&#34; target=&#34;_blank&#34;&gt;https://aws.amazon.com/devops/what-is-devops/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;devops-agile&#34;&gt;Devops + agile&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Devops shares many common characteristics with the Agile movement, especially with the focus on individuals, interactions, and collaboration. You might wonder if devops is just “rebranded” Agile.&lt;/li&gt;
+&lt;li&gt;Devops extends Agile ideas and applies them to an entire organization, not only the development process.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+      
+    </item>
+    
+    <item>
       <title>Resetting Mysql 5.7 Root Password</title>
       <link>https://brianmituka.com/posts/resetting-mysql-root-password/</link>
       <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>

@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Thu, 28 Mar 2019 10:08:39 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 23:28:15 +0300</lastBuildDate>
     
 	<atom:link href="https://brianmituka.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using du to find the sizes of directories and files</title>
+      <link>https://brianmituka.com/posts/bash/</link>
+      <pubDate>Mon, 23 Sep 2019 23:28:15 +0300</pubDate>
+      
+      <guid>https://brianmituka.com/posts/bash/</guid>
+      <description> # du - stands for disk usage man du #exclude a particular file type with --exclude --exclude=&#39;*.fileext&#39; #to show everything including files add -a du directory/ #formatted output of subdirectory sizes du -h directory/ #show the subdirectory sizes in kbs du -k directory/ #show the subdirectory sizes in mbs du -m directory/ #show all subdirectories + files sizes du -ha directory/ #get the total size of the directory du -ch directory/ | grep total  Getting the sub-directories disk size from smallest to largest du -h --max-depth=1 | sort -hr  </description>
+    </item>
+    
+    <item>
+      <title>What is devops?</title>
+      <link>https://brianmituka.com/posts/devops/</link>
+      <pubDate>Mon, 23 Sep 2019 10:19:03 +0300</pubDate>
+      
+      <guid>https://brianmituka.com/posts/devops/</guid>
+      <description>Introduction Some might define it as a software development method, while others might think that it is a set of tools and technologies such as configuration management and continuous delivery(me).
+Devops is a professional and cultural movement that stresses the iterative efforts to break down information silos, monitor relationships and repair when misunderstandings arise between teams in an organization. This enables an organization to deliver services faster, evolve and improve products at a faster pace than organizations using traditional software development and infrastructure management processes.</description>
+    </item>
     
     <item>
       <title>Resetting Mysql 5.7 Root Password</title>
