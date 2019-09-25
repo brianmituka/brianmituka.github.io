@@ -79,34 +79,49 @@
     <div class="content">
       
 
-<pre><code class="language-bash"># du - stands for disk usage
-man du
-#exclude a particular file type with --exclude
---exclude='*.fileext' 
-#to show everything including files add -a
-du directory/
+<p><code>du</code> - stands for disk usage.
+it&rsquo;s available on mac and linux by default.
+You can use <code>du</code> to find out how big files are especially when identifying files that are consuming a lot of disk space.</p>
 
-#formatted output of subdirectory sizes
-du -h directory/
+<h2 id="manpage">manpage</h2>
 
-#show the subdirectory sizes in kbs
-du -k directory/
+<p><code>man du</code></p>
 
-#show the subdirectory sizes in mbs
-du -m directory/
+<h2 id="show-the-subdirectory-sizes">show the subdirectory sizes</h2>
 
-#show all subdirectories + files sizes
-du -ha directory/
+<p><code>du directory/</code></p>
 
-#get the total size of the directory
-du -ch directory/ | grep total
+<h2 id="show-everything-including-files">show everything including files</h2>
 
-</code></pre>
+<p><code>du -a directory/</code></p>
+
+<h2 id="formatted-output-of-subdirectory-sizes">formatted output of subdirectory sizes</h2>
+
+<p><code>du -h directory/</code></p>
+
+<h2 id="show-the-subdirectory-sizes-in-kbs">show the subdirectory sizes in kbs</h2>
+
+<p><code>du -k directory/</code></p>
+
+<h2 id="show-the-subdirectory-sizes-in-mbs">show the subdirectory sizes in mbs</h2>
+
+<p><code>du -m directory/</code></p>
+
+<h2 id="show-all-subdirectories-files-sizes">show all subdirectories + files sizes</h2>
+
+<p><code>du -ha directory/</code></p>
+
+<h2 id="get-the-total-size-of-the-directory">get the total size of the directory</h2>
+
+<p><code>du -ch directory/ | grep total</code></p>
 
 <h2 id="getting-the-sub-directories-disk-size-from-smallest-to-largest">Getting the sub-directories disk size from smallest to largest</h2>
 
-<pre><code class="language-bash">du -h --max-depth=1 | sort -hr
-</code></pre>
+<p><code>du -h --max-depth=1 | sort -hr</code></p>
+
+<h2 id="exclude-a-particular-file-type-with-exclude">exclude a particular file type with &ndash;exclude</h2>
+
+<p><code>--exclude='*.fileext'</code></p>
 
       
       <div class="related">

@@ -18,7 +18,12 @@
       <pubDate>Mon, 23 Sep 2019 23:28:15 +0300</pubDate>
       
       <guid>https://brianmituka.com/posts/bash/</guid>
-      <description> # du - stands for disk usage man du #exclude a particular file type with --exclude --exclude=&#39;*.fileext&#39; #to show everything including files add -a du directory/ #formatted output of subdirectory sizes du -h directory/ #show the subdirectory sizes in kbs du -k directory/ #show the subdirectory sizes in mbs du -m directory/ #show all subdirectories + files sizes du -ha directory/ #get the total size of the directory du -ch directory/ | grep total  Getting the sub-directories disk size from smallest to largest du -h --max-depth=1 | sort -hr  </description>
+      <description>du - stands for disk usage. it&amp;rsquo;s available on mac and linux by default. You can use du to find out how big files are especially when identifying files that are consuming a lot of disk space.
+manpage man du
+show the subdirectory sizes du directory/
+show everything including files du -a directory/
+formatted output of subdirectory sizes du -h directory/
+show the subdirectory sizes in kbs du -k directory/</description>
     </item>
     
     <item>

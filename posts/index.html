@@ -79,7 +79,16 @@
       <h2 class="subtitle is-6">September 23, 2019</h2>
       <h1 class="title"><a href="https://brianmituka.com/posts/bash/">Using du to find the sizes of directories and files</a></h1>
       <div class="content">
-         # du - stands for disk usage man du #exclude a particular file type with --exclude --exclude='*.fileext' #to show everything including files add -a du directory/ #formatted output of subdirectory sizes du -h directory/ #show the subdirectory sizes in kbs du -k directory/ #show the subdirectory sizes in mbs du -m directory/ #show all subdirectories + files sizes du -ha directory/ #get the total size of the directory du -ch directory/ | grep total  Getting the sub-directories disk size from smallest to largest du -h --max-depth=1 | sort -hr  
+        du - stands for disk usage. it&rsquo;s available on mac and linux by default. You can use du to find out how big files are especially when identifying files that are consuming a lot of disk space.
+manpage man du
+show the subdirectory sizes du directory/
+show everything including files du -a directory/
+formatted output of subdirectory sizes du -h directory/
+show the subdirectory sizes in kbs du -k directory/
+        
+        <a class="button is-link" href="https://brianmituka.com/posts/bash/" style="height:28px">
+          Read more
+        </a>
         
       </div>
     </article>

@@ -22,34 +22,49 @@
       
       <content>
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# du - stands for disk usage
-man du
-#exclude a particular file type with --exclude
---exclude=&#39;*.fileext&#39; 
-#to show everything including files add -a
-du directory/
+&lt;p&gt;&lt;code&gt;du&lt;/code&gt; - stands for disk usage.
+it&amp;rsquo;s available on mac and linux by default.
+You can use &lt;code&gt;du&lt;/code&gt; to find out how big files are especially when identifying files that are consuming a lot of disk space.&lt;/p&gt;
 
-#formatted output of subdirectory sizes
-du -h directory/
+&lt;h2 id=&#34;manpage&#34;&gt;manpage&lt;/h2&gt;
 
-#show the subdirectory sizes in kbs
-du -k directory/
+&lt;p&gt;&lt;code&gt;man du&lt;/code&gt;&lt;/p&gt;
 
-#show the subdirectory sizes in mbs
-du -m directory/
+&lt;h2 id=&#34;show-the-subdirectory-sizes&#34;&gt;show the subdirectory sizes&lt;/h2&gt;
 
-#show all subdirectories + files sizes
-du -ha directory/
+&lt;p&gt;&lt;code&gt;du directory/&lt;/code&gt;&lt;/p&gt;
 
-#get the total size of the directory
-du -ch directory/ | grep total
+&lt;h2 id=&#34;show-everything-including-files&#34;&gt;show everything including files&lt;/h2&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;du -a directory/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;formatted-output-of-subdirectory-sizes&#34;&gt;formatted output of subdirectory sizes&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;du -h directory/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;show-the-subdirectory-sizes-in-kbs&#34;&gt;show the subdirectory sizes in kbs&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;du -k directory/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;show-the-subdirectory-sizes-in-mbs&#34;&gt;show the subdirectory sizes in mbs&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;du -m directory/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;show-all-subdirectories-files-sizes&#34;&gt;show all subdirectories + files sizes&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;du -ha directory/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;get-the-total-size-of-the-directory&#34;&gt;get the total size of the directory&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;du -ch directory/ | grep total&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;getting-the-sub-directories-disk-size-from-smallest-to-largest&#34;&gt;Getting the sub-directories disk size from smallest to largest&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;du -h --max-depth=1 | sort -hr
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;du -h --max-depth=1 | sort -hr&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;exclude-a-particular-file-type-with-exclude&#34;&gt;exclude a particular file type with &amp;ndash;exclude&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;--exclude=&#39;*.fileext&#39;&lt;/code&gt;&lt;/p&gt;
 </content>
       
     </item>
