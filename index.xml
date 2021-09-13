@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChimieMots</title>
+    <link>https://brianmituka.github.io/</link>
+    <description>Recent content on ChimieMots</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact>briannitletone@protonmail.com</contact>
+    <copyright>&copy; <a href:"https://github.com/brianmituka">Brianmituka</a> 2021</copyright>
+    
+        <atom:link href="https://brianmituka.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://brianmituka.github.io/posts/</link>
+      <pubDate>Mon, 13 Sep 2021 21:43:31 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.github.io/posts/</guid>
+      <description></description>
+      
+      <content></content>
+      
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://brianmituka.github.io/about/</link>
+      <pubDate>Wed, 20 Mar 2019 13:55:11 +0300</pubDate>
+      <author>brian mituka</author>
+      <guid>https://brianmituka.github.io/about/</guid>
+      <description></description>
+      
+      <content>&lt;h1 id=&#34;this-is-my-personal-blog-where-my-thouughts-live&#34;&gt;This is my personal blog where my thouughts live&lt;/h1&gt;
+</content>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ChimieMots</title>
+    <link>https://brianmituka.github.io/posts/</link>
+    <description>Recent content in Posts on ChimieMots</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href:&#34;https://github.com/brianmituka&#34;&gt;Brianmituka&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Mon, 13 Sep 2021 21:43:31 +0300</lastBuildDate>
+    
+	<atom:link href="https://brianmituka.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simplicity</title>
+      <link>https://brianmituka.github.io/posts/simplicity/</link>
+      <pubDate>Mon, 13 Sep 2021 21:43:31 +0300</pubDate>
+      
+      <guid>https://brianmituka.github.io/posts/simplicity/</guid>
+      <description>What is simplicity?
+ Simplicity is the virtue of removing the extraneous to reveal the essence. Simplicity is the direct alignment with reality and it is the opposite of false and its various manifestations including pretension, prevarication, bloviating, masquerading, exaggeration, denial, grandiloquence, falsehood, or misunderstanding. Simplicity is the opposite of excess, and its various manifestations including opulence, extravagance, gaudiness, ostentatiousness, and waste.  What is simplicity not?
+ Simplicity is not simple-mindedness, nor is it simplistic.</description>
+    </item>
+    
+    <item>
+      <title>Using du to find the sizes of directories and files</title>
+      <link>https://brianmituka.github.io/posts/bash/</link>
+      <pubDate>Mon, 23 Sep 2019 23:28:15 +0300</pubDate>
+      
+      <guid>https://brianmituka.github.io/posts/bash/</guid>
+      <description>You can use &lt;code&gt;du&lt;/code&gt; to find out how big files are especially</description>
+    </item>
+    
+    <item>
+      <title>What is devops?</title>
+      <link>https://brianmituka.github.io/posts/devops/</link>
+      <pubDate>Mon, 23 Sep 2019 10:19:03 +0300</pubDate>
+      
+      <guid>https://brianmituka.github.io/posts/devops/</guid>
+      <description>Introduction Some might define it as a software development method, while others might think that it is a set of tools and technologies such as configuration management and continuous delivery(me).
+Devops is a professional and cultural movement that stresses the iterative efforts to break down information silos, monitor relationships and repair when misunderstandings arise between teams in an organization. This enables an organization to deliver services faster, evolve and improve products at a faster pace than organizations using traditional software development and infrastructure management processes.</description>
+    </item>
+    
+    <item>
+      <title>Resetting Mysql 5.7 Root Password</title>
+      <link>https://brianmituka.github.io/posts/resetting-mysql-root-password/</link>
+      <pubDate>Thu, 28 Mar 2019 10:08:39 +0300</pubDate>
+      
+      <guid>https://brianmituka.github.io/posts/resetting-mysql-root-password/</guid>
+      <description>This will be a quick guide on how to reset your mysql root password.
+Recently, I found myself in a situation where I had to restore an old jenkins job that was used to measure the rates at which we send SMS at FrontlineSMS and this also involved setting up a mysql db that had become obsolete and was no longer being used.
+The problem was that I could not log into the database since nobody could remember the password as it was no longer being used.</description>
+    </item>
+    
+  </channel>
+</rss>
